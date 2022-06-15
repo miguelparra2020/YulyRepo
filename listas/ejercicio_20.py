@@ -1,5 +1,4 @@
-# 3. Leer 10 enteros, almacenarlos en una lista y determinar en qué posición de la lista está
-# el mayor número primo leído.
+# 20. Leer 10 números enteros, almacenarlos en una lista y determinar en qué posición está el menor número primo.
 
 try:
     cantidad = int(input("Por favor ingresar la cantidad de numeros enteros que va a ingresar     "))
@@ -12,6 +11,6 @@ try:
                 contador += 1
         if contador == 0:
             primo.append(lista[i])
-    mayor_primo = max(primo)
-    print("El numero primo mayor que se encuentra en la lista es: ",mayor_primo,"y está en la posición",lista.index(mayor_primo)+1)
+    menor_primo = min(primo)
+    print("El numero primo menor que se encuentra en la lista es: ",menor_primo,"y está en la posición",lista.index(menor_primo)+1)
 except ValueError: print("Error")
